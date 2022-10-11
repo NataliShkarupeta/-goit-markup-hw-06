@@ -1079,18 +1079,17 @@ dd {
     outline: none;
 
 }
-
+.form-item input:active,
 .form-item input:hover,
 .form-item input:focus{
     border: 1px solid #2196F3;
-    fill: var(--accent-color);
+   
 }
 
-
+.form-item:active  .form-icon,
 .form-item:hover  .form-icon,
-.form-item:focus  .form-icon{
-    fill: var(--accent-color);
-   
+.form-item:focus-within .form-icon{
+    fill: var(--accent-color);  
 }
 
 
