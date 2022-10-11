@@ -573,6 +573,10 @@ dd {
     /* outline: 2px solid tomato; */
 }
 
+.first-footer-blok{
+    width: 231px;
+}
+
 .footer-logo{
     display: block;
     margin-bottom: 20px;
@@ -636,6 +640,7 @@ dd {
 .footer-sec-blok {
     margin-top: 12px;
     margin-left: 70px;
+    margin-right: 93px;
     
 }
 
@@ -920,10 +925,15 @@ dd {
     height: 581px;
 
     background-color: #fff;
+    border-radius: 4px;
   
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.but-close:hover .close,
+.but-close:focus .close{
+    fill: var(--accent-color);
+}
 
 .but-close{
     display: flex;
@@ -941,6 +951,7 @@ dd {
     margin-top: 8px;
     margin-right: 8px;
 }
+
 
 
 
@@ -968,9 +979,55 @@ dd {
     padding: 40px;
 }
 
+.sec-modal-form{
+    padding-top: 8px;
+    width: 570px;
+    height: 86px;
+    
+}
+.sec-modal-lable{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+.activ input{
+    padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#fff;
+    width: 358px;
+    margin-right: 12px;
+}
+
+.sec-modal-lable{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.activ{
+    display: flex;
+    position: relative;
+
+    transition:  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.activ :hover,
+.activ :focus{
+    border: 1px solid #2196F3;
+}
+
 .date{
     width: 448px;
     margin-bottom: 20px;
+   
 }
 
 .form-item{
@@ -979,19 +1036,94 @@ dd {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
+    position: relative;
    
+    
+}  
+
+/* .form-item:hover,
+.form-item:focus{
+    : var(--accent-color);   
+} */
+
+
+
+.connection-field {
+    padding-right: 42px;
 }
+
+ .form-icon{
+   position: absolute;
+   bottom: 11px;
+   left: 12px;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .footer-form-icon{
+    position: absolute;
+    fill: #fff;
+    top: 13px;
+    left: 530px;
+    
+ }
+
  
 .form-item input{
     margin: 0;
     padding: 11px 12px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-left: 42px;
+    cursor: pointer;
+    transition:  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+
+}
+
+.form-item input:hover,
+.form-item input:focus{
+    border: 1px solid #2196F3;
+    fill: var(--accent-color);
+}
+
+
+.form-item:hover  .form-icon,
+.form-item:focus  .form-icon{
+    fill: var(--accent-color);
+   
+}
+
+
+.activ input{
+    border: 1px solid rgba(255, 255, 255, 0.3);;
+    border-radius: 4px;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+    text-transform: none;
+
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+    background-color: #2F303A;
     
+   
+}
+
+textarea,
+.activ input{
+    cursor: pointer;
+   
 }
 
 .modal-agree{
     margin-right: 8px;
+}
+
+.modal-link{
+    color: var(--accent-color);
 }
 
 .form-item label{
@@ -1005,8 +1137,20 @@ dd {
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    outline: none;
+    transition:  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-comment label{
+    display: block;
+    margin-bottom: 4px; 
+
+}
+
+.commet:hover,
+.commet:focus{
+    border: 1px solid #2196F3;
+}
 
 .action{
     display: flex;
@@ -1015,27 +1159,49 @@ dd {
     margin-bottom: 30px;
 }
 
+
+
 .placeholder{
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
 
 }
 
+/* .sec-modal-text .placeholder{
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+} */
+
 .modal-bt{
 width: 200px;
 height: 50px;
-background: #188CE8;
+background: #2196F3;
 
 border-radius: 4px;
 font-weight: 700;
 font-size: 16px;
-line-height: 30px;
+line-height: 1.87;
 letter-spacing: 0.06em;
 color: #fff;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-style: none;
+cursor: pointer;
+transition: background-color, box-shadow   250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-bt:hover,
+.modal-bt:focus
+{
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   
 }

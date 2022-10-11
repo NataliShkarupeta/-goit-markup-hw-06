@@ -239,7 +239,7 @@
        <!---------------------------------------Футер----------------------->
        <footer class="footer-page">
         <div class="container-footer">
-            <div>
+            <div class="first-footer-blok" >
                 <a class="footer-logo" href="./index.html"><span class="accent">Web</span>Studio</a>
                 <address class="footer-style">
                     <ul class="footer-list">
@@ -251,7 +251,7 @@
                     </ul>
                 </address>
             </div>
-             <div class="footer-sec-blok">
+            <div class="footer-sec-blok">
                 <h3 class="footer-sec-blok-title">Приєднуйтесь</h3>
                 <ul class="footer-sec-blok-list">
                     <li class="sec-bloc-item"> <a class="footer-bloc-link" href=""> 
@@ -272,8 +272,20 @@
                         </svg></a></li>
                 </ul>
             </div>
-        </div>    
-        </footer>
+        
+        
+        <form class="sec-modal-form" action="">
+            <h3 class="sec-modal-lable" > Підпишіться на розсилку</h3>
+            <div class="activ">
+                <input type="sec-modal-text" name="name" placeholder="E-mail" id="" />
+                <button class="modal-bt"  type="submit"> Підписатися </button>
+                <svg  class="footer-form-icon"  width="24" height="24"> 
+                    <use href="./images/symbol-defs.svg#icon-icon-send-1"></use>
+                </svg>
+            </div>
+        </form>
+    </div>  
+    </footer>
 
 
         <div class="backdrop is-hidden " data-modal>
@@ -304,28 +316,41 @@
         <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
         <div class="date">
             <div class="form-item">
-                <label > Імʼя</label>
-                <input type="text" name="name" />
-            </div>
-        
-            <div class="form-item">
-                <label > Телефон</label>
-                <input type="tel" name="tel"/>
-            </div>
-        
-            <div class="form-item">
-                <label  >Пошта</label>
-                <input type="email" name="mail" />
-            </div>
-           
-            <label > Коментар</label>
-            <textarea class="commet" name="comment" placeholder="Введіть текст"  rows="10"></textarea>
+                <label  for="name"> Імʼя</label>
+                <input class="connection-field"  type="text" name="name" id="name" />
+                <svg  class="form-icon" width="18" height="18"> 
+                    <use href="./images/symbol-defs.svg#icon-person-black-18dp-1" ></use>
+                </svg>
+            </div>  
+                
             
+            <div class="form-item">
+                <label for="tel" > Телефон</label>
+                <input class="connection-field " type="tel" name="tel" id="tel"/>
+                <svg  class="form-icon" width="18" height="18"> 
+                    <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1" ></use>
+                </svg>
+            </div>
+        
+            <div class="form-item">
+                <label for="mail" >Пошта</label>
+                <svg   class="form-icon" width="18" height="18"> 
+                    <use href="./images/symbol-defs.svg#icon-email-black-18dp-1" ></use>
+                </svg>
+                <input class="connection-field" type="email" name="mail" id="mail" />
+                
+            </div>
+            <div class="modal-comment">
+                <label for="modal-comment" > Коментар</label>
+                <textarea class="commet" id="modal-comment" name="comment" placeholder="Введіть текст"  rows="10"></textarea>
+             </div>
         </div>
         
+
+
         <div class="action">
             <input class="modal-agree" type="checkbox"  name="agree" value="" id="agree" />
-            <label for="agree"> Погоджуюся з розсилкою та приймаю  <a href=" Умови договору">Умови договору</a> </label>
+            <label for="agree"> Погоджуюся з розсилкою та приймаю  <a class="modal-link" href=" Умови договору">Умови договору</a> </label>
         </div>  
            
             <button class="modal-bt" type="submit">  Відправити</button>
@@ -334,12 +359,7 @@
     </form>
 
 
-<form action="">
-    <label for="" > Підпишіться на розсилку</label>
-    <input type="text" name="name" id="" />
-   
-    <button type="submit"> Підписатися </button>
-</form>
+
 
 
 
