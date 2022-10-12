@@ -1022,10 +1022,10 @@ dd {
     transition:  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.activ :hover,
+/* .activ :hover,
 .activ :focus{
     border: 1px solid #2196F3;
-}
+} */
 
 .date{
     width: 448px;
@@ -1168,6 +1168,10 @@ border: none;
 
 .modal-link{
     color: var(--accent-color);
+    
+    /* text-decoration: none;
+    border-bottom: 1px solid var(--accent-color) ; */
+   
 }
 
 .form-item label{
@@ -1235,7 +1239,10 @@ textarea::placeholder{
 }
 
 .modal-bt-text{
+   display: inline-block ;
    margin-right: 25px;
+   
+   
 }
 
 .modal-bt:hover,
